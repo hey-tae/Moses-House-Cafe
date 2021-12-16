@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JAVA HOUSE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/coffee.ico" type="image/x-icon" />
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="stylesheet" href="tailwind.css">
+  </head>
+  <body class="bg-gray-900">
+    <header>
+      <nav class="flex justify-around py-1 bg-green-800 shadow-sm">
+          <div class="flex">
+            <a href="/"><h1 class="font-semibold text-3xl text-yellow-200">Java House</h1></a>
+          </div>
+          <div class="mt-2 space-x-3 text-xl">
+            <span class="font-semibold text-gray-300">Barista Panel:</span>
+            <a href="/login" class="text-gray-300 hover:text-gray-200 active:text-gray-400 font-semibold" ><span class="fa fa-user"></span> Login</a>
+            <a href="/signup" class="text-gray-300 hover:text-gray-200 active:text-gray-400 font-semibold" ><span class="fa fa-user"></span> Signup</a>
+          </div>
+      </nav>
+    </header>
+    <div class="m-auto px-64 py-4">
+
+      <!-- NAME -->
+      <div class="mb-2 ">
+        <label for="name" class="text-4xl text-gray-100 font-semibold">Name: </label>
+        <input type="text" name="name" id="custName" class="bg-gray-200 h-10 rounded text-2xl" placeholder="Enter customer's name"></input>
+      </div>
+
+      <!-- SIZE -->
+
+      <div class="flex justify-around w-full py-4 my-4 rounded-md bg-gray-800 text-2xl text-gray-200 font-semibold">
+        <button id="short" class="size px-12 py-2 rounded-md font-semibold bg-gray-600 hover:bg-gray-500 active:bg-gray-700 transition ease-in duration-150 cursor-pointer">
+          Short
+        </button>
+        <button id="tall" class="size px-12 py-2 rounded-md font-semibold bg-gray-600 hover:bg-gray-500 active:bg-gray-700 transition ease-in duration-150 cursor-pointer">
+          Tall
+        </button>
+        <button id="grande" class="size px-12 py-2 rounded-md font-semibold bg-gray-600 hover:bg-gray-500 active:bg-gray-700 transition ease-in duration-150 cursor-pointer">
+          Grande
+        </button>
+        <button id="venti" class="size px-12 py-2 rounded-md font-semibold bg-gray-600 hover:bg-gray-500 active:bg-gray-700 transition ease-in duration-150 cursor-pointer">
+          Venti
+        </button>
+      </div>
+
+      
+
+      <div class="flex justify-between">
+
+        <!-- SHOW SUBMISSION INFO -->
+
+        <div class="bg-gray-300 w-1/4 h-auto rounded relative text-2xl">
+          <p>Name: <span>Jason</span></p>
+          <p>Size: <span>Venti</span></p>
+          <p>Flavor: <span>Caramel Coffee Frappucino</span></p>
+          <p>Dairy: <span>Soy Milk</span></p>
+
+          <div class="absolute bottom-0 left-4">
+            <button type="submit" id="submit" class="bg-yellow-800 hover:bg-yellow-900 active:bg-yellow-600 text-gray-50 text-2xl font-semibold shadow-md px-3 py-2 rounded-md my-4">Submit Order</button>
+          </div>
+        </div>
+        
+        <!-- FLAVOR SELECTION -->
+        <div class="flex space-x-6">
+
+          <!-- ESPRESSOS -->
+
+          <div class="flex flex-col w-52">
+            <h2 class="text-center text-gray-100 text-2xl font-semibold my-2">
+              Espresso
+            </h2>
+            <button class="coffee coffee-btn bg-yellow-800 hover:bg-yellow-700 active:bg-yellow-900">
+              Cappucino
+            </button>
+            <button class="coffee coffee-btn bg-yellow-800 hover:bg-yellow-700 active:bg-yellow-900">
+              Latte
+            </button>
+            <button class="coffee coffee-btn bg-yellow-900 hover:bg-yellow-800 active:bg-yellow-900">
+              Java Coffee
+            </button>
+            <button class="coffee coffee-btn bg-yellow-900 hover:bg-yellow-800 active:bg-yellow-900">
+              Mocha
+            </button>
+            <button class="coffee coffee-btn bg-brown-700 hover:bg-brown-600 active:bg-brown-800">
+              Caramel Macchiato
+            </button>
+          </div>
+          
+          <!-- CLASSIC BUBBLE TEA -->
+
+          <div class="flex flex-col flex-wrap w-52">
+            <h2 class="text-center text-gray-100 text-2xl font-semibold my-2">
+              Milk Tea
+            </h2>
+            <button class="coffee coffee-btn bg-purple-600 hover:bg-purple-500 active:bg-purple-700">
+              Milk Green Tea
+            </button>
+            <button class="coffee coffee-btn bg-purple-600 hover:bg-purple-500 active:bg-purple-700">
+              Oolong Milk Tea
+            </button>
+            <button class="coffee coffee-btn bg-purple-800 hover:bg-purple-700 active:bg-purple-900">
+              Taro Milk Tea
+            </button>
+            <button class="coffee coffee-btn bg-purple-800 hover:bg-purple-700 active:bg-purple-900">
+              Winter Melon Milk Green Tea
+            </button>
+            <button class="coffee coffee-btn bg-indigo-800 hover:bg-indigo-600 active:bg-indigo-900">
+              Thai Milk Tea
+            </button>
+          </div>
+
+          <!-- Specials -->
+
+          <div class="flex flex-col flex-wrap w-52">
+            <h2 class="text-center text-gray-100 text-2xl font-semibold my-2">
+              Specials
+            </h2>
+            <button class="coffee coffee-btn bg-yellow-800 hover:bg-yellow-700 active:bg-yellow-900">
+              Kopi Luwak ✨ (most popular)
+            </button>
+            <button class="coffee coffee-btn bg-yellow-800 hover:bg-yellow-700 active:bg-yellow-900">
+              Cà Phê Đen | 🔥 (hot)
+            </button>
+            <button class="coffee coffee-btn bg-yellow-900 hover:bg-yellow-800 active:bg-yellow-900">
+              Cà Phê Đen Đá | 🧊 (cold)
+            </button>
+            <button class="coffee coffee-btn bg-yellow-900 hover:bg-yellow-800 active:bg-yellow-900">
+              Cà Phê Sữa | 🔥 (hot)
+            </button>
+            <button class="coffee coffee-btn bg-brown-700 hover:bg-brown-600 active:bg-brown-800">
+              Cà Phê Sữa Đá | 🧊 (cold)
+            </button>
+          </div>
+
+
+        
+        </div>
+        
+      </div>
+        
+     </div>
+    <script src="main.js"></script>
+  </body>
+</html>

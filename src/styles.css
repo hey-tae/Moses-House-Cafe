@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.coffee-btn {
+  @apply text-center text-gray-100 text-2xl font-bold w-52 h-32 p-6 my-2 inline-block rounded-md cursor-pointer;
+}
